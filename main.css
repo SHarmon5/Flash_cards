@@ -1,14 +1,43 @@
+h1 {
+  text-align: center;
+  color: #4682b4;
+  font-size: 70px;
+  font-family: cursive
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: steelblue;
   padding: 10px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #ffffffcc;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.btn:hover {
+  background-color: #008CBA;
+  color: white;
 }
