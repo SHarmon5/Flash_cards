@@ -4,9 +4,11 @@
 
 $(document).ready ( function () {
 
-  $(".card").on("click", function() {
+  $(".flash_card").on("click", function() {
     //console.log("here")
-    let description = this.childNodes[3];
+
+  
+    let description = this.childNodes[5];
     vis = $(description).css("visibility")
       if (vis == "visible") {
         vis = "hidden"
