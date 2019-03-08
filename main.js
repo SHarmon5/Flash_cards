@@ -1,4 +1,16 @@
 $(document).ready( function() {
+  $(".card").on("click", function() {
+    //console.log("here")
+    let description = this.childNodes[3];
+    vis = $(description).css("visibility")
+      if (vis == "visible") {
+        vis = "hidden"
+      } else if (vis == "hidden") {
+        vis = "visible"
+      }
+    $(description).css("visibility", vis)
+
+  })
 
   $("#btn-add-card").on("click", function() {
     // addNewCard();
@@ -8,25 +20,5 @@ $(document).ready( function() {
     debugger
   })
 
-  // function toggle() {
-  //   showForm = !showForm;
-  //   $("#btn-add-card").hide();
-  //   $("#").toggle();
-
-  //   if (showForm) {
-      
-  //   }
-  // }
-
-  // function addNewCard() {
-  //   // Add a new object of the card clas
-  //   // need to be able to increment # of ids by 1
-  //   Card.new()
-
-
-
-  //   var div = '<div data-id=' + newCard.id + 
-
-  // }
     
 });
