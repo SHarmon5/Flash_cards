@@ -1,6 +1,10 @@
 var showAddForm = false
+var showContainer = false
 
 $(document).ready( function() {
+
+  if (showContainer == false)
+    $('.grid-container').hide()
 
   $(".card").on("click", function() {
     //console.log("here")
@@ -49,8 +53,7 @@ $(document).ready( function() {
 
   // Process the data from the form to create a new flashcard
   $('#submit').on('click', function(event) {
-    
-    
+    $('.grid-container').show()   
     event.preventDefault();
     var results = $('#form-new').serializeArray()
     var title = results[0].value
