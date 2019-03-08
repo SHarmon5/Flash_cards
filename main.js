@@ -9,6 +9,7 @@ $(document).ready ( function () {
 
   
     let description = this.childNodes[5];
+
     vis = $(description).css("visibility")
       if (vis == "visible") {
         vis = "hidden"
