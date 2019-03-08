@@ -12,3 +12,11 @@
   padding: 20px 0;
   font-size: 30px;
 }
+
+#add-card-form {
+  display: none;
+}
+
+.grid-container {
+  
+}
